@@ -27,7 +27,7 @@ W systemie Linuks, wytnij i wklej poniższe polecenia w terminalu, aby zainstalo
 ~
 ~</area-linux>
 ~<area-assistant>
-W przypadku Asystenta MeshCentral w Windows, przejdź do tego linku aby zakończyć proces:
+For MeshCentral Assistant on Windows, nagivate to the following link to complete the process:
 ~
 ~[[[SERVERURL]]]/meshagents?id=10006&meshid=[[[MESHIDHEX]]]&tag=mailto:[[[EMAIL]]]
 ~

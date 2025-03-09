@@ -470,7 +470,7 @@
     "agent": "代理",
     "group": "设备组",
     "url": "服务器网址",
-    "meshName": "团队名字",
+    "meshName": "群组名称",
     "meshId": "组标识符",
     "serverId": "服务器标识符",
     "setup": "设定",

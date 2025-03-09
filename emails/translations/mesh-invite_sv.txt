@@ -27,7 +27,7 @@ För Linux, klipp och klistra in följande i en terminal för att installera age
 ~
 ~</area-linux>
 ~<area-assistant>
-För MeshCentral Assistant på Windows, gå till följande länk för att slutföra processen:
+For MeshCentral Assistant on Windows, nagivate to the following link to complete the process:
 ~
 ~[[[SERVERURL]]]/meshagents?id=10006&meshid=[[[MESHIDHEX]]]&tag=mailto:[[[EMAIL]]]
 ~

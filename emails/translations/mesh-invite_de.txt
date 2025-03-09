@@ -27,7 +27,7 @@ Schneiden Sie unter Linux Folgendes aus und fügen Sie es in ein Terminal ein, u
 ~
 ~</area-linux>
 ~<area-assistant>
-Navigieren Sie für MeshCentral Assistant unter Windows zum folgenden Link, um den Vorgang abzuschließen:
+For MeshCentral Assistant on Windows, nagivate to the following link to complete the process:
 ~
 ~[[[SERVERURL]]]/meshagents?id=10006&meshid=[[[MESHIDHEX]]]&tag=mailto:[[[EMAIL]]]
 ~
