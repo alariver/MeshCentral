@@ -2743,9 +2743,11 @@
             QV('MainMenuMyServer', siteRights & 21);
             QV('p2ServerActionsBackup', (siteRights & 1) && ((serverFeatures & 1) != 0));
             QV('p2ServerActionsRestore', (siteRights & 4) && ((serverFeatures & 2) != 0));
-            QV('p2ServerActionsVersion', (siteRights & 16) && ((serverFeatures & 4) != 0));
+            // QV('p2ServerActionsVersion', (siteRights & 16) && ((serverFeatures & 4) != 0));
+            QV('p2ServerActionsVersion', false);
             QV('p2ServerActionsErrors', (siteRights & 16) && ((serverFeatures & 8) != 0));
-            QV('p2ServerActionsConfig', (siteRights & 16) && ((serverFeatures & 128) != 0));
+            // QV('p2ServerActionsConfig', (siteRights & 16) && ((serverFeatures & 128) != 0));
+            QV('p2ServerActionsConfig', false);
             QV('MainMenuMyFiles', siteRights & 8);
             QV('LeftMenuMyFiles', siteRights & 8);
             if (((siteRights & 8) == 0) && (xxcurrentView == 5)) { setDialogMode(0); go(1); }
