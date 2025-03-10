@@ -655,7 +655,12 @@ function translate(lang, langFile, sources, createSubDir) {
 
         langs = {};
         for (var i in langFileData.strings) { var entry = langFileData.strings[i]; for (var j in entry) { if ((j != 'en') && (j != 'xloc') && (j != '*')) { langs[j.toLowerCase()] = true; } } }
+        log("langs :",langs);
+
+        
+
         for (var i in langs) {
+            if (i != 'zh-chs' ) { continue; }
             const { Worker } = require('worker_threads')
             const worker = new Worker('./translate.js', { stdout: true, workerData: { op: 'translate', args: [i, langFile, sources, createSubDir] } });
             worker.stdout.on('data', function (msg) { console.log('wstdio:', msg.toString()); });
