@@ -1,51 +1,50 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Ylianst/MeshCentral/master/meshcentral-config-schema.json",
-    "__comment1__": "This is a simple configuration file, all values and sections that start with underscore (_) are ignored. Edit a section and remove the _ in front of the name. Refer to the user's guide for details.",
-    "__comment2__": "See node_modules/meshcentral/sample-config-advanced.json for a more advanced example.",
-    "settings": {
-      "cert": "r.skyatlas.net",
-      "WANonly": true,
-      "_LANonly": true,
-      "_sessionKey": "MyReallySecretPassword1",
-      "port": 443,
-      "aliasPort": 443,
-      "redirPort": 80,
-      "redirAliasPort": 80
-    },
-    "domains": {
-      "": {
-        "title": "REMS Control Server",
-        "title2": "1.23",
-        "siteStyle": 3,
-        "_minify": true,
-        "_newAccounts": true,
-        "_userNameIsEmail": true,
-  "agentCustomization": {
-          "displayName": "SkyAtlas® Rems Central Management™",
-          "description": "SkyAtlas® Rems Central Management™ agent for remote monitoring, management and assistance.",
-          "companyName": "SkyAtlas",
-          "serviceName": "rems_central_agent",
-          "image": "agent-logo.png",
-          "fileName": "station-agent"
-        },
-        "agentFileInfo": {
-         "icon": "hw573.ico",
-  "filedescription": "HW573 Remote Management Agent",
-  "fileversion": "2.3",
-  "internalname": "remsAgent",
-  "legalcopyright": "Private Property, Authorized use only",
-  "originalfilename": "remsAgent",
-  "productname": "remsAgent",
-  "productversion": "v2.3"
-                                              }
+  "$schema": "https://raw.githubusercontent.com/Ylianst/MeshCentral/master/meshcentral-config-schema.json",
+  "__comment1__": "This is a simple configuration file, all values and sections that start with underscore (_) are ignored. Edit a section and remove the _ in front of the name. Refer to the user's guide for details.",
+  "__comment2__": "See node_modules/meshcentral/sample-config-advanced.json for a more advanced example.",
+  "settings": {
+    "cert": "r.skyatlas.net",
+    "WANonly": true,
+    "_LANonly": true,
+    "_sessionKey": "MyReallySecretPassword1",
+    "port": 443,
+    "aliasPort": 443,
+    "redirPort": 80,
+    "redirAliasPort": 80
+  },
+  "domains": {
+    "": {
+      "title": "REMS Control Server",
+      "title2": "1.23",
+      "siteStyle": 3,
+      "_minify": true,
+      "_newAccounts": true,
+      "_userNameIsEmail": true,
+      "agentCustomization": {
+        "displayName": "SkyAtlas® Rems Central Management™",
+        "description": "SkyAtlas® Rems Central Management™ agent for remote monitoring, management and assistance.",
+        "companyName": "SkyAtlas",
+        "serviceName": "rems_central_agent",
+        "image": "agent-logo.png",
+        "fileName": "station-agent"
+      },
+      "agentFileInfo": {
+        "icon": "hw573.ico",
+        "filedescription": "HW573 Remote Management Agent",
+        "fileversion": "2.3",
+        "internalname": "remsAgent",
+        "legalcopyright": "Private Property, Authorized use only",
+        "originalfilename": "remsAgent",
+        "productname": "remsAgent",
+        "productversion": "v2.3"
       }
-    },
-    "letsencrypt": {
-      "__comment__": "Requires NodeJS 8.x or better, Go to https://letsdebug.net/ first before trying Let's Encrypt.",
-      "email": "sams.march@gmail.com",
-      "names": "r.skyatlas.net",
-      "skipChallengeVerification": true,
-      "production": true
     }
+  },
+  "letsencrypt": {
+    "__comment__": "Requires NodeJS 8.x or better, Go to https://letsdebug.net/ first before trying Let's Encrypt.",
+    "email": "sams.march@gmail.com",
+    "names": "r.skyatlas.net",
+    "skipChallengeVerification": true,
+    "production": true
   }
-  
+}

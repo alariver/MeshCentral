@@ -660,6 +660,7 @@ function translate(lang, langFile, sources, createSubDir) {
         
 
         for (var i in langs) {
+            // Hechzh. 2025.03.10 We only use zh-chs plus EN language.
             if (i != 'zh-chs' ) { continue; }
             const { Worker } = require('worker_threads')
             const worker = new Worker('./translate.js', { stdout: true, workerData: { op: 'translate', args: [i, langFile, sources, createSubDir] } });
