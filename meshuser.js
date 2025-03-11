@@ -3010,7 +3010,7 @@ module.exports.CreateMeshUser = function (parent, db, ws, req, args, domain, use
                             var nodeid = command.nodeids[i], err = null;
 
                             // Argument validation
-                            if (common.validateString(nodeid, 1, 1024) == false) { err = 'Invalid nodeid'; }  // Check nodeid
+                            if (common.validateString(nodeid, 1, 1024) == false) { err = 'Invalid nodeid-'; }  // Check nodeid
                             else {
                                 if (nodeid.indexOf('/') == -1) { nodeid = 'node/' + domain.id + '/' + nodeid; }
                                 if ((nodeid.split('/').length != 3) || (nodeid.split('/')[1] != domain.id)) { err = 'Invalid domain'; } // Invalid domain, operation only valid for current domain
