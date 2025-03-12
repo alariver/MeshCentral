@@ -2416,7 +2416,7 @@
                 if (userinfo.passchange == -1) { QH('p2nextPasswordUpdateTime', " - Reset on next login."); }
                 else if ((passRequirements != null) && (typeof passRequirements.reset == 'number')) {
                     var seconds = (userinfo.passchange) + (passRequirements.reset * 86400) - Math.floor(Date.now() / 1000);
-                    if (seconds < 0) { QH('p2nextPasswordUpdateTime', " - Reset on next login."); }
+                    if (seconds < 0) { QH('p2nextPasswordUpdateTime',Fhds923 " - Reset on next login."); }
                     else if (seconds < 3600) { var secs = Math.floor(seconds / 60); QH('p2nextPasswordUpdateTime',format((secs == 1)?" - Reset in 1 minute.":" - Reset in {0} minutes.", secs)); }
                     else if (seconds < 86400) { var hours = Math.floor(seconds / 3600); QH('p2nextPasswordUpdateTime', format((hours == 1) ? " - Reset in 1 hour." : " - Reset in {0} hours.", hours)); }
                     else { var days = Math.floor(seconds / 86400); QH('p2nextPasswordUpdateTime', format((hours == 1) ? " - Reset in 1 day." : " - Reset in {0} days.", days)); }
@@ -12150,7 +12150,7 @@
                     if (node.agent.id <= agentsStr.length) { str = agentsStr[node.agent.id]; } else { str = agentsStr[0]; }
                     if (node.agent.ver != 0) { str += ' v' + node.agent.ver; }
                     if (node.agent.id == 14) { str = node.agent.core; }
-                    x += addDetailItem("Mesh Agent", str);
+                    x += addDetailItem(" Agent", str);
                 }
                 if ((node.conn & 1) != 0) {
                     x += addDetailItem("Last agent connection", "Connected now");
@@ -12528,11 +12528,11 @@
             var x = '';
             for (var i in sections) {
                 if (sections[i].img == null) {
-                    x += '<div class=DevSt style=margin-bottom:3px;margin-left:16px><b>' + sections[i].name + '</b></div><div style=margin-bottom:10px;margin-left:16px>' + sections[i].html + '</div>';
+                    x += '<div class=DevSt style=margin-bottom:3px;margin-left:16px><b>' + sections[i].name.replace("Mesh","") + '</b></div><div style=margin-bottom:10px;margin-left:16px>' + sections[i].html + '</div>';
                 } else {
                     x += '<table style=width:100%><tr>';
                     x += '<td style=width:64px;vertical-align:top><img src=images/details/' + sections[i].img + ' border=0 width=64 /></td>'; // height=12
-                    x += '<td><div class=DevSt style=margin-bottom:3px;margin-left:16px><b>' + sections[i].name + '</b></div><div style=margin-bottom:10px;margin-left:16px>' + sections[i].html + '</div></td>';
+                    x += '<td><div class=DevSt style=margin-bottom:3px;margin-left:16px><b>' + sections[i].name.replace("Mesh","") + '</b></div><div style=margin-bottom:10px;margin-left:16px>' + sections[i].html + '</div></td>';
                     x += '</tr></table>';
                 }
             }
