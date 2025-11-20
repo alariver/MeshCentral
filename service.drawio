@@ -1,0 +1,16 @@
+<mxfile host="65bd71144e">
+    <diagram id="jRT10spR9yOLt4gf5q1B" name="Page-1">
+        <mxGraphModel dx="1093" dy="593" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="image;aspect=fixed;perimeter=ellipsePerimeter;html=1;align=center;shadow=0;dashed=0;spacingTop=3;image=img/lib/active_directory/database_cube.svg;imageBackground=#99CCFF;" vertex="1" parent="1">
+                    <mxGeometry x="90" y="108.89" width="280" height="311.11" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="fillColor=#3F51B5;aspect=fixed;sketch=0;pointerEvents=1;shadow=0;dashed=0;html=1;strokeColor=none;labelPosition=center;verticalLabelPosition=bottom;outlineConnect=0;verticalAlign=top;align=center;shape=mxgraph.openstack.neutron_net;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="20" width="110" height="110" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
