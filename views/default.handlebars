@@ -8958,7 +8958,7 @@
         // Show MeshCentral Router dialog
         function p10showMeshRouterDialog() {
             if (xxdialogMode) return;
-            var x = '<div>' + "MeshCentral Router is a Windows tool for TCP port mapping. You can, for example, RDP into a remote device thru this server." + '</div><br />';
+            var x = '<div>' + "RemsCentral Router is a Windows tool for TCP port mapping. You can, for example, RDP into a remote device thru this server." + '</div><br />';
             x += addHtmlValue("Win32 Executable", '<a style=cursor:pointer onclick=downloadFile("meshagents?meshaction=winrouter' + (urlargs.key?('&key=' + urlargs.key):'') + '",null,true)>MeshCentralRouter.exe</a>');
             x += addHtmlValue("MacOS Installer", '<a style=cursor:pointer onclick=downloadFile("meshagents?meshaction=macrouter' + (urlargs.key?('&key=' + urlargs.key):'') + '",null,true)>MeshCentralRouter.dmg</a>');
             var servername = serverinfo.name;
