@@ -13927,8 +13927,10 @@
             }
             y += addHtmlFormFloating("Dates & Time", x);
 
+            // Hechzh. we don't want to display this.
+
             if ((userinfo.siteadmin == 0xFFFFFFFF) && (domain == '')) {
-                y += '<br /><a rel="noreferrer noopener" target="_blank" href="translator.htm">' + "Help translate MeshCentral" + '</a>';
+                y += '<br /><a style="display:none" rel="noreferrer noopener" target="_blank" href="translator.htm">' + "Help translate MeshCentral" + '</a>';
             }
 
             setModalContent('xxAddAgent', "Localization Settings", y);
