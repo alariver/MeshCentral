@@ -17,7 +17,7 @@
       "title": "REMS Control Server",
       "title2": "1.23",
       "siteStyle": 2,
-      "_minify": true,
+      "minify": true,
       "_newAccounts": true,
       "_userNameIsEmail": true,
       "agentCustomization": {
