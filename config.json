@@ -10,13 +10,62 @@
     "port": 443,
     "aliasPort": 443,
     "redirPort": 80,
-    "redirAliasPort": 80
+    "redirAliasPort": 80,
+    "compression": true,
+    "wsCompression": true,
+    "agentWsCompression": true
   },
   "domains": {
     "": {
       "title": "REMS Control Server",
       "title2": "1.23",
-      "siteStyle": 2,
+      "_siteStyle": 2,
+      "minify": true,
+      "_newAccounts": true,
+      "_userNameIsEmail": true,
+      "agentCustomization": {
+        "displayName": "SkyAtlas® Rems Central Management™",
+        "description": "SkyAtlas® Rems Central Management™ agent for remote monitoring, management and assistance.",
+        "companyName": "SkyAtlas",
+        "serviceName": "rems_central_agent",
+        "image": "agent-logo.png",
+        "fileName": "station-agent"
+      },
+      "agentFileInfo": {
+        "icon": "hw573.ico",
+        "filedescription": "HW573 Remote Management Agent",
+        "fileversion": "2.3",
+        "internalname": "remsAgent",
+        "legalcopyright": "Private Property, Authorized use only",
+        "originalfilename": "remsAgent",
+        "productname": "remsAgent",
+        "productversion": "v2.3"
+      },
+      "consentMessages": {
+        "title": "RemsCentral",
+        "desktop": "{0} requesting remote desktop access. Grant access?",
+        "terminal": "{0} requesting remote terminal access. Grant access?",
+        "files": "{0} requesting remote files access. Grant access?",
+        "consentTimeout": 30,
+        "autoAcceptOnTimeout": false,
+        "autoAcceptIfNoUser": false,
+        "oldStyle": true
+      },
+      "notificationMessages": {
+        "title": "RemsCentral",
+        "desktop": "{0} started a remote desktop session.",
+        "terminal": "{0} started a remote terminal session.",
+        "files": "{0} started a remote files session."
+      },
+      "assistantCustomization": {
+        "title": "SkyAtlas® Rems Central Management™",
+        "image": "assistant-logo.png"
+      }
+    },
+     "internal": {
+      "title": "REMS Control Server",
+      "title2": "1.23",
+      "_siteStyle": 2,
       "minify": true,
       "_newAccounts": true,
       "_userNameIsEmail": true,
